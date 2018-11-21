@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Election DAPP Front End</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>Election DAPP</h1>
+
+  <br>
+  <br><label for="owner">Owner Name:</label><h3 id = 'owner'>Owner is: </h3>
+  <br><br><button onclick="App.owner()">Get Election Owner</button>
+  <hr>
+
+  <br><label for="election">Election Name:</label><h3 id='name'>Election Name: </h3>
+  <br><br><button onclick="App.electionName()">Get Election Name</button>
+  <hr>
+
+  <br><label for="candidate">Candidate Name:</label><h3 id='list'>Candidate Name: </h3>
+  <br><br><button onclick="App.listCandidates()">List Candidate</button>
+  <hr>
+
+  <br>
+    <h1>Add an Election Candidate</h1>
+    <br><label for="add">Candidate Name:</label><input type="text" id="add"></input>
+    <br><br><button id="addCandidate" onclick="App.addCandidate()">Add Candidate</button>
+    <br><br>
+    <br>
+    <span id="status"></span>
+  <br>
+  <br><br>
+</body>
+</html>
